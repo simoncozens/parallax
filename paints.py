@@ -13,7 +13,7 @@ def grad(start, mid):
 
 
 def skew(paint):
-    angle = "XSEP=-50:-15 XSEP=0:0 XSEP=50:15"
+    angle = "XSEP=-50:-4 XSEP=0:0 XSEP=50:4"
     return PaintVarSkewAroundCenter(0, angle, (512, 450), paint)
 
 
@@ -32,7 +32,7 @@ for gname in font.getGlyphOrder():
             "screen",
             skew(base),
             PaintVarTranslate(
-                "XSEP=-50:-100 XSEP=0:0 XSEP=50:100",
+                "XSEP=-50:-130 XSEP=0:0 XSEP=50:130",
                 "YSEP=-50:-100 YSEP=0:0 YSEP=50:100",
                 skew(
                     PaintGlyph(gname, grad(LOW_GREEN, HIGH_GREEN)),
