@@ -23,7 +23,7 @@ for gname in font.getGlyphOrder():
         "screen",
         PaintVarTranslate(
             "XSEP=-50:100 XSEP=0:0 XSEP=50:-100",
-            "YSEP=-50:100 YSEP=0:0 YSEP=50:-100",
+            "YSEP=-50:110 YSEP=0:0 YSEP=50:-110",
             skew(
                 PaintGlyph(gname, grad(LOW_BLUE, HIGH_BLUE)),
             ),
@@ -32,7 +32,7 @@ for gname in font.getGlyphOrder():
             "screen",
             skew(base),
             PaintVarTranslate(
-                "XSEP=-50:-130 XSEP=0:0 XSEP=50:130",
+                "XSEP=-50:-110 XSEP=0:0 XSEP=50:110",
                 "YSEP=-50:-100 YSEP=0:0 YSEP=50:100",
                 skew(
                     PaintGlyph(gname, grad(LOW_GREEN, HIGH_GREEN)),
