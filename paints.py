@@ -33,7 +33,7 @@ def grad(start, mid):
 # And another wrapper encoding our skew constants
 def skew(paint):
     return PaintVarSkewAroundCenter(
-        0,  # X axis skew
+        "YSEP=-50:-4 YSEP=0:0 YSEP=50:4",  # X axis skew
         "XSEP=-50:-4 XSEP=0:0 XSEP=50:4",  # Y axis skew
         # "At XSEP=-50, skew the Y axis -4 degrees; at XSEP=50, skew
         # it 4 degrees"
